@@ -1,4 +1,5 @@
-#![feature(wasip2)]
+#![cfg_attr(all(target_os = "wasi", target_env = "p2"), feature(wasip2))]
+
 #![allow(
     clippy::cognitive_complexity,
     clippy::large_enum_variant,
